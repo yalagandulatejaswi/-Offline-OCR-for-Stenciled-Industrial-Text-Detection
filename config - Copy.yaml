@@ -1,0 +1,175 @@
+# Industrial OCR System Configuration
+# =====================================
+# Advanced configuration for customizing OCR behavior
+
+# OCR Engine Settings
+ocr:
+  # Language codes (ISO 639-1)
+  languages:
+    - en
+  
+  # Enable GPU acceleration (requires CUDA)
+  gpu: false
+  
+  # EasyOCR parameters
+  easyocr:
+    detail: 1                    # Return bounding boxes (0 or 1)
+    paragraph: false             # Detect paragraphs vs individual text
+    min_size: 10                 # Minimum text height in pixels
+    text_threshold: 0.6          # Character detection confidence (0.0-1.0)
+    low_text: 0.3               # Character linking threshold
+    link_threshold: 0.3         # Text region linking threshold
+    canvas_size: 2560           # Maximum image dimension
+    mag_ratio: 1.5              # Image magnification ratio
+
+# Preprocessing Settings
+preprocessing:
+  # CLAHE (Contrast Limited Adaptive Histogram Equalization)
+  clahe:
+    clip_limit: 3.0             # Contrast amplification limit
+    tile_grid_size: [8, 8]      # Size of local regions
+  
+  # Bilateral Filter (noise reduction)
+  bilateral:
+    d: 9                        # Diameter of pixel neighborhood
+    sigma_color: 75             # Filter sigma in color space
+    sigma_space: 75             # Filter sigma in coordinate space
+  
+  # Adaptive Thresholding
+  adaptive_threshold:
+    block_size: 11              # Size of neighborhood (must be odd)
+    C: 2                        # Constant subtracted from mean
+  
+  # Morphological Operations
+  morphology:
+    kernel_size: [2, 2]         # Structuring element size
+    iterations: 1               # Number of times to apply
+  
+  # Deskewing
+  deskew:
+    enabled: true               # Enable automatic rotation correction
+    min_angle: 0.5              # Minimum angle to correct (degrees)
+
+# Post-processing Settings
+postprocessing:
+  # Text cleaning
+  text_cleaning:
+    remove_special_chars: true  # Remove non-alphanumeric characters
+    keep_chars: "-_"            # Characters to keep (dash, underscore)
+    strip_whitespace: true      # Remove leading/trailing spaces
+  
+  # Confidence filtering
+  confidence:
+    min_threshold: 0.5          # Minimum confidence to include
+    high_confidence: 0.8        # Threshold for "high confidence" label
+  
+  # OCR error correction (optional)
+  error_correction:
+    enabled: false              # Enable common OCR error fixes
+    rules:
+      - ["0", "O"]              # Replace 0 with O (if expecting letters)
+      - ["l", "1"]              # Replace l with 1 (if expecting numbers)
+
+# Output Settings
+output:
+  # Directory for results
+  output_dir: "outputs"
+  
+  # JSON output
+  json:
+    indent: 2                   # JSON indentation spaces
+    ensure_ascii: false         # Allow unicode characters
+  
+  # Annotated images
+  annotated_images:
+    enabled: true               # Save annotated images
+    format: "jpg"               # Output format (jpg, png)
+    quality: 95                 # JPEG quality (1-100)
+    
+    # Bounding box colors (BGR format)
+    colors:
+      high_confidence: [0, 255, 0]      # Green
+      medium_confidence: [0, 255, 255]  # Yellow
+      low_confidence: [0, 0, 255]       # Red
+    
+    # Text label settings
+    font_scale: 0.6
+    font_thickness: 2
+    line_thickness: 3
+
+# Logging Settings
+logging:
+  level: "INFO"                 # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "ocr_system.log"
+  format: "%(asctime)s - %(levelname)s - %(message)s"
+  console_output: true
+
+# Performance Settings
+performance:
+  # Batch processing
+  batch:
+    parallel: false             # Enable parallel processing
+    num_workers: 4              # Number of parallel workers
+  
+  # Image preprocessing
+  max_image_size: 4096          # Resize images larger than this
+  
+  # Memory management
+  clear_cache: true             # Clear cache between batches
+
+# Quality Assessment
+quality:
+  # Quality score thresholds
+  thresholds:
+    excellent: 0.85
+    good: 0.70
+    fair: 0.50
+  
+  # Validation rules
+  validation:
+    min_text_length: 1          # Minimum characters in detected text
+    max_text_length: 100        # Maximum characters (filter noise)
+
+# Industrial-Specific Settings
+industrial:
+  # Expected text patterns (regex)
+  patterns:
+    batch_number: "BATCH-\\d{4}-[A-Z]"
+    serial_number: "SERIAL-[A-Z]{3}-\\d{6}"
+    weight: "WEIGHT-\\d+KG"
+  
+  # Surface types (for future model selection)
+  surface_types:
+    - metal
+    - wood
+    - cardboard
+    - plastic
+  
+  # Degradation handling
+  degradation:
+    faded_text_boost: true      # Extra preprocessing for faded text
+    damage_tolerance: "medium"  # low, medium, high
+
+# Advanced Features (Future)
+advanced:
+  # Perspective correction
+  perspective_correction:
+    enabled: false
+    auto_detect: true
+  
+  # Super-resolution
+  super_resolution:
+    enabled: false
+    scale_factor: 2
+  
+  # Ensemble methods
+  ensemble:
+    enabled: false
+    models: ["easyocr", "tesseract"]
+    voting_method: "confidence"  # confidence, majority
+
+# Notes:
+# - Modify these settings based on your specific use case
+# - Test changes with test_system.py
+# - Backup this file before making changes
+# - Some features marked as "Future" are not yet implemented

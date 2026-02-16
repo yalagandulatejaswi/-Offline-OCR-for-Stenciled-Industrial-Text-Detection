@@ -1,0 +1,141 @@
+2026-02-14 21:52:17,412 - INFO - Initializing Industrial OCR System...
+2026-02-14 21:52:21,968 - INFO - EasyOCR initialized successfully (GPU: False)
+2026-02-14 21:52:22,010 - INFO - Starting preprocessing pipeline...
+2026-02-14 21:52:22,065 - INFO - Preprocessing completed successfully
+2026-02-14 21:52:22,074 - INFO - Starting preprocessing pipeline...
+2026-02-14 21:52:22,102 - INFO - Preprocessing completed successfully
+2026-02-14 21:52:22,103 - INFO - Running OCR inference...
+2026-02-14 21:52:23,632 - INFO - OCR completed: 0 text regions detected
+2026-02-14 21:52:23,633 - INFO - Processing image: test_images\synthetic_test.jpg
+2026-02-14 21:52:23,639 - INFO - Starting preprocessing pipeline...
+2026-02-14 21:52:23,667 - INFO - Preprocessing completed successfully
+2026-02-14 21:52:23,667 - INFO - Running OCR inference...
+2026-02-14 21:52:24,994 - INFO - OCR completed: 0 text regions detected
+2026-02-14 21:52:24,996 - INFO - JSON saved: outputs\synthetic_test.json
+2026-02-14 21:52:25,002 - INFO - Annotated image saved: outputs\synthetic_test_annotated.jpg
+2026-02-14 21:52:25,002 - INFO - Processing completed successfully
+2026-02-14 21:52:25,005 - INFO - Starting batch processing: test_images
+2026-02-14 21:52:25,006 - INFO - Found 1 images to process
+2026-02-14 21:52:25,006 - INFO - Processing 1/1: synthetic_test.jpg
+2026-02-14 21:52:25,006 - INFO - Processing image: test_images\synthetic_test.jpg
+2026-02-14 21:52:25,012 - INFO - Starting preprocessing pipeline...
+2026-02-14 21:52:25,036 - INFO - Preprocessing completed successfully
+2026-02-14 21:52:25,036 - INFO - Running OCR inference...
+2026-02-14 21:52:26,358 - INFO - OCR completed: 0 text regions detected
+2026-02-14 21:52:26,360 - INFO - JSON saved: outputs\synthetic_test.json
+2026-02-14 21:52:26,364 - INFO - Annotated image saved: outputs\synthetic_test_annotated.jpg
+2026-02-14 21:52:26,365 - INFO - Processing completed successfully
+2026-02-14 21:52:26,365 - INFO - Batch processing completed: 1/1 successful
+2026-02-14 21:52:26,365 - INFO - Processing image: nonexistent_file.jpg
+2026-02-14 21:52:26,370 - ERROR - Failed to load image: nonexistent_file.jpg
+2026-02-14 21:52:26,372 - INFO - Processing image: test_images\invalid.jpg
+2026-02-14 21:52:26,388 - ERROR - Failed to load image: test_images\invalid.jpg
+2026-02-14 21:53:10,911 - INFO - Initializing Industrial OCR System...
+2026-02-14 21:53:14,593 - INFO - EasyOCR initialized successfully (GPU: False)
+2026-02-14 21:53:14,595 - INFO - Processing image: test_images/demo_box.jpg
+2026-02-14 21:53:14,618 - INFO - Starting preprocessing pipeline...
+2026-02-14 21:53:14,679 - INFO - Preprocessing completed successfully
+2026-02-14 21:53:14,679 - INFO - Running OCR inference...
+2026-02-14 21:53:17,587 - INFO - Detected: 'BATCH_2024-A' (confidence: 0.794)
+2026-02-14 21:53:17,587 - INFO - Detected: 'WEIGHT_SOKG' (confidence: 0.961)
+2026-02-14 21:53:17,588 - INFO - Detected: 'SERIAL-XYZ-_123456' (confidence: 0.632)
+2026-02-14 21:53:17,588 - INFO - OCR completed: 3 text regions detected
+2026-02-14 21:53:17,590 - INFO - JSON saved: outputs\demo_box.json
+2026-02-14 21:53:17,595 - INFO - Annotated image saved: outputs\demo_box_annotated.jpg
+2026-02-14 21:53:17,596 - INFO - Processing completed successfully
+2026-02-14 21:56:36,656 - INFO - Initializing Industrial OCR System...
+2026-02-14 21:56:40,615 - INFO - EasyOCR initialized successfully (GPU: False)
+2026-02-14 21:56:40,616 - INFO - Processing image: test_images/industrial_box.jpg
+2026-02-14 21:56:40,652 - INFO - Starting preprocessing pipeline...
+2026-02-14 21:56:40,745 - INFO - Preprocessing completed successfully
+2026-02-14 21:56:40,745 - INFO - Running OCR inference...
+2026-02-14 21:56:45,145 - INFO - Detected: 'BATCH20247A' (confidence: 0.269)
+2026-02-14 21:56:45,146 - INFO - Detected: 'WEIGHT S0KG' (confidence: 0.426)
+2026-02-14 21:56:45,146 - INFO - Detected: 'MFGDATE' (confidence: 0.904)
+2026-02-14 21:56:45,146 - INFO - Detected: '0' (confidence: 0.557)
+2026-02-14 21:56:45,146 - INFO - Detected: '2024' (confidence: 0.992)
+2026-02-14 21:56:45,147 - INFO - OCR completed: 5 text regions detected
+2026-02-14 21:56:45,149 - INFO - JSON saved: outputs\industrial_box.json
+2026-02-14 21:56:45,160 - INFO - Annotated image saved: outputs\industrial_box_annotated.jpg
+2026-02-14 21:56:45,162 - INFO - Processing completed successfully
+2026-02-14 21:59:48,636 - INFO - Initializing Industrial OCR System...
+2026-02-14 21:59:53,421 - INFO - EasyOCR initialized successfully (GPU: False)
+2026-02-14 21:59:53,422 - INFO - Processing image: test_images/quick_test.jpg
+2026-02-14 21:59:53,441 - INFO - Starting preprocessing pipeline...
+2026-02-14 21:59:53,505 - INFO - Preprocessing completed successfully
+2026-02-14 21:59:53,505 - INFO - Running OCR inference...
+2026-02-14 21:59:56,044 - INFO - Detected: 'TEST-2024' (confidence: 0.916)
+2026-02-14 21:59:56,044 - INFO - OCR completed: 1 text regions detected
+2026-02-14 21:59:56,049 - INFO - JSON saved: outputs\quick_test.json
+2026-02-14 21:59:56,053 - INFO - Annotated image saved: outputs\quick_test_annotated.jpg
+2026-02-14 21:59:56,053 - INFO - Processing completed successfully
+2026-02-14 22:09:08,779 - INFO - Initializing Industrial OCR System...
+2026-02-14 22:09:17,894 - INFO - EasyOCR initialized successfully (GPU: False)
+2026-02-14 22:09:17,901 - INFO - Starting preprocessing pipeline...
+2026-02-14 22:09:17,985 - INFO - Preprocessing completed successfully
+2026-02-14 22:09:18,006 - INFO - Running OCR inference...
+2026-02-14 22:09:21,116 - INFO - Detected: 'cd' (confidence: 0.336)
+2026-02-14 22:09:21,117 - INFO - Detected: 'Aao' (confidence: 0.115)
+2026-02-14 22:09:21,118 - INFO - Detected: 'ODM' (confidence: 0.105)
+2026-02-14 22:09:21,119 - INFO - Detected: 'G4TH' (confidence: 0.167)
+2026-02-14 22:09:21,120 - INFO - Detected: 'Mdc' (confidence: 0.356)
+2026-02-14 22:09:21,120 - INFO - OCR completed: 5 text regions detected
+2026-02-14 22:09:43,331 - INFO - Starting preprocessing pipeline...
+2026-02-14 22:09:43,379 - INFO - Preprocessing completed successfully
+2026-02-14 22:09:43,394 - INFO - Running OCR inference...
+2026-02-14 22:09:46,494 - INFO - Detected: 'cd' (confidence: 0.336)
+2026-02-14 22:09:46,495 - INFO - Detected: 'Aao' (confidence: 0.115)
+2026-02-14 22:09:46,496 - INFO - Detected: 'ODM' (confidence: 0.105)
+2026-02-14 22:09:46,497 - INFO - Detected: 'G4TH' (confidence: 0.167)
+2026-02-14 22:09:46,498 - INFO - Detected: 'Mdc' (confidence: 0.356)
+2026-02-14 22:09:46,498 - INFO - OCR completed: 5 text regions detected
+2026-02-14 22:09:51,922 - INFO - Initializing Industrial OCR System...
+2026-02-14 22:10:00,619 - INFO - EasyOCR initialized successfully (GPU: True)
+2026-02-14 22:10:00,626 - INFO - Starting preprocessing pipeline...
+2026-02-14 22:10:00,678 - INFO - Preprocessing completed successfully
+2026-02-14 22:10:00,692 - INFO - Running OCR inference...
+2026-02-14 22:10:03,935 - INFO - Detected: 'cd' (confidence: 0.336)
+2026-02-14 22:10:03,936 - INFO - Detected: 'Aao' (confidence: 0.115)
+2026-02-14 22:10:03,937 - INFO - Detected: 'ODM' (confidence: 0.105)
+2026-02-14 22:10:03,938 - INFO - Detected: 'G4TH' (confidence: 0.167)
+2026-02-14 22:10:03,939 - INFO - Detected: 'Mdc' (confidence: 0.356)
+2026-02-14 22:10:03,939 - INFO - OCR completed: 5 text regions detected
+2026-02-14 22:10:09,673 - INFO - Starting preprocessing pipeline...
+2026-02-14 22:10:09,734 - INFO - Preprocessing completed successfully
+2026-02-14 22:10:09,748 - INFO - Running OCR inference...
+2026-02-14 22:10:12,973 - INFO - Detected: 'cd' (confidence: 0.336)
+2026-02-14 22:10:12,974 - INFO - Detected: 'Aao' (confidence: 0.115)
+2026-02-14 22:10:12,976 - INFO - Detected: 'ODM' (confidence: 0.105)
+2026-02-14 22:10:12,976 - INFO - Detected: 'G4TH' (confidence: 0.167)
+2026-02-14 22:10:12,978 - INFO - Detected: 'Mdc' (confidence: 0.356)
+2026-02-14 22:10:12,978 - INFO - OCR completed: 5 text regions detected
+2026-02-14 22:11:50,001 - INFO - Starting preprocessing pipeline...
+2026-02-14 22:11:50,050 - INFO - Preprocessing completed successfully
+2026-02-14 22:11:50,067 - INFO - Running OCR inference...
+2026-02-14 22:11:52,674 - INFO - Detected: 'CT' (confidence: 0.553)
+2026-02-14 22:11:52,674 - INFO - OCR completed: 1 text regions detected
+2026-02-14 22:12:16,013 - INFO - Starting preprocessing pipeline...
+2026-02-14 22:12:16,069 - INFO - Preprocessing completed successfully
+2026-02-14 22:12:16,086 - INFO - Running OCR inference...
+2026-02-14 22:12:18,816 - INFO - Detected: 'CT' (confidence: 0.553)
+2026-02-14 22:12:18,816 - INFO - OCR completed: 1 text regions detected
+2026-02-14 22:12:27,382 - INFO - Starting preprocessing pipeline...
+2026-02-14 22:12:27,429 - INFO - Preprocessing completed successfully
+2026-02-14 22:12:27,446 - INFO - Running OCR inference...
+2026-02-14 22:12:30,200 - INFO - Detected: 'CT' (confidence: 0.553)
+2026-02-14 22:12:30,200 - INFO - OCR completed: 1 text regions detected
+2026-02-14 22:12:40,178 - INFO - Starting preprocessing pipeline...
+2026-02-14 22:12:40,237 - INFO - Preprocessing completed successfully
+2026-02-14 22:12:40,250 - INFO - Running OCR inference...
+2026-02-14 22:12:42,958 - INFO - Detected: 'CT' (confidence: 0.553)
+2026-02-14 22:12:42,960 - INFO - OCR completed: 1 text regions detected
+2026-02-14 22:13:03,673 - INFO - Starting preprocessing pipeline...
+2026-02-14 22:13:03,708 - INFO - Preprocessing completed successfully
+2026-02-14 22:13:03,717 - INFO - Running OCR inference...
+2026-02-14 22:13:05,604 - INFO - Detected: 'HTGHu' (confidence: 0.007)
+2026-02-14 22:13:05,604 - INFO - OCR completed: 1 text regions detected
+2026-02-14 22:13:11,057 - INFO - Starting preprocessing pipeline...
+2026-02-14 22:13:11,086 - INFO - Preprocessing completed successfully
+2026-02-14 22:13:11,098 - INFO - Running OCR inference...
+2026-02-14 22:13:12,959 - INFO - Detected: 'HTGHu' (confidence: 0.007)
+2026-02-14 22:13:12,961 - INFO - OCR completed: 1 text regions detected
