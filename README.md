@@ -98,7 +98,9 @@ project/
 ```
 ## outputs 
 ![Screenshot 2026-02-14 220819_annotated](https://github.com/user-attachments/assets/5ad79e70-b560-42a0-a74c-a7a4fec8e578)
-![Screenshot 2026-02-16 124315.png…](https://github.com/user-attachments/assets/5ad79e70-b560-42a0-a74c-a7a4fec8e578)
+
+
+
 
 
 
@@ -157,6 +159,7 @@ MIT License - Free for commercial and personal use
 ---
 
 **Built with ❤️ for Industrial AI Applications**
+
 
 
 
