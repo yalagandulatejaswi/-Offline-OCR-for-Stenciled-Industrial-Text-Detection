@@ -98,11 +98,9 @@ project/
 ```
 ## outputs 
 ![Screenshot 2026-02-14 220819_annotated](https://github.com/user-attachments/assets/5ad79e70-b560-42a0-a74c-a7a4fec8e578)
+![Screenshot 2026-02-16 124315.png…](https://github.com/user-attachments/assets/5ad79e70-b560-42a0-a74c-a7a4fec8e578)
 
-<img width="1454" height="905" alt="Screenshot 2026-02-16 124315" src="https://github.com/user-attachments/assets/3fc193b8-e03c-49d7-a913-ae9e07204128" />
 
-
-<img width="1511" height="896" alt="Screenshot 2026-02-16 124159" src="https://github.com/user-attachments/assets/1f176f75-621b-43b8-a5e4-b004dff1ec96" />
 
 
 ## 🎓 Industrial Considerations
@@ -159,5 +157,6 @@ MIT License - Free for commercial and personal use
 ---
 
 **Built with ❤️ for Industrial AI Applications**
+
 
 
